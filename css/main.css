@@ -4,6 +4,8 @@ body{
 
 }
 
+
+
 .other{
 	color:black;
 	background:#2f3138;
@@ -34,6 +36,16 @@ body{
 	background:#4ca176;
 	padding-top:100px;
 	height:500px;
+}
+
+.list
+{
+    -moz-column-count: 2;
+    -moz-column-gap: 2.5em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2.5em;
+     column-count: 2;
+     column-gap: 2.5em;
 }
 
 #solution{
@@ -132,7 +144,7 @@ th{
 /*first div on volleybal*/
 #volleyball{
 	background:#4ca176 ;
-	height:200px;
+	height:150px;
 }
 
 #headtxt{
