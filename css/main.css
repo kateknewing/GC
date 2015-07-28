@@ -8,6 +8,10 @@
      column-gap: 2.5em;
 }
 
+h1{
+	text-transform: uppercase;
+}
+
 body{
  	background:#4ca176;
  	color:white;
@@ -21,7 +25,7 @@ body{
 
 .other{
 	color:black;
-	background:#2f3138;
+	background:white;
 	padding-top: 60px;
 }
 
@@ -48,7 +52,7 @@ body{
 #youth{
 	background:#4ca176;
 	padding-top:100px;
-	height:500px;
+	height:60%;
 }
 
 .list
@@ -69,14 +73,14 @@ body{
 
 #research{
 	background:#2f3138;
-	height:700px;
+	height:130%;
 	padding-top:100px;
 }
 
 #next{
 	background:#4ca176;
 	padding-top:100px;
-	height:600px;
+	height:150%;
 }
 
 #ten{
@@ -101,12 +105,31 @@ body{
     position:relative;
     overflow:hidden;
 }
+
+h2{
+	color:white;
+}
  
-.caption {
+.caption2 {
     position:absolute;
     top:0;
     right:0;
     background:rgba(169,169,169, 0.8);
+    width:100%;
+    height:100%;
+    display: none;
+    text-align:center;
+    color:black !important;
+    z-index:2;
+}
+
+
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(76, 161, 118, 0.8);
     width:100%;
     height:100%;
     display: none;
