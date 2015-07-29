@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Football
+title: Soccer
 ---
+<!--
+	Instructions: Fill in name of sport, pros, cons and then each subfactor panel
+-->
 
-
-<div class="volleyball jumbotron">
-  
-  <center><h1 style="padding-top:0px;"><img style="margin-right:30px;" src="img/volleyball.png" width="50px">Soccer</h1>
+<!-- Don't Touch-->
+<div class="container">
+<div class="jumbotron volleyball">
+  <h1 style="padding-top:0px">Soccer</h1>
   
 </div>
 </div>
@@ -15,84 +18,276 @@ title: Football
 <!--Pros and Cons-->
 <div class="other">
 
-	<div class="sport1">
 	<div class="container-fluid">
 		<div class="row">
 
 			<!-- Pros -->
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<div class="panel panel-success">
 					<div class="panel-heading">Pros</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  					  <li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+
+						   <!-- Fill out Pros-->
+	  					  <li class="list-group-item">Youth market is much larger than in other sports</li>
+						  <li class="list-group-item">Game is fast-paced and digital scoring would be very beneficial</li>
+						  <li class="list-group-item">Large roster makes scoring and keeping track of players stats by hand difficult</li>
+
 						</ul>
 				   </div>
 				</div>
 			</div>
 
 			<!-- Cons -->
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="panel panel-danger">
 					<div class="panel-heading">Cons</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  						<li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+							<!-- Fill Out Cons, delete the row if you're not using it-->
+	  					  <li class="list-group-item">Fans and culture have a history of being reluctant to new technology</li>
+						  <li class="list-group-item">There is competition from iScore in the amateur soccer market</li>
+						  <li class="list-group-item">Data aggregation and statistical analysis is not yet considered important</li>
+
+
 						</ul>
 				  </div>
 				</div>
 			</div>	
+
 		</div>
-		<center>  <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
+		<center> <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
 	</div>
 	</div>
-
 </div>
 
-	
-<div class="container" id="factors">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3"> 
-	        <h1>Factor Analysis</h1><hr><br>
-	</div>
-</div>
-</div>
+
 
 <div class="other">
+	<div class="row">
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
+        <h1>Factor Analysis</h1><hr>
+      </div>
+    </div>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor One</div>
+			<div class="panel-heading">Market Size and Demographics</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. </p>
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	<p>Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
-			    	<div class="alert alert-danger" role="alert">Oh no Volleyball is really bad at this.</div>ce sed augue tempus, tincidunt lectus a, ullamcorper lectus.
-			    </p>
+
+				<!--Fill out Market Size-->
+				<p> Of the sports surveyed, soccer is by far the most popular with <b>12,726,000</b> participants in 2013. More importantly, soccer also had the most core participants in 2013 with <b>6,194,000</b>. The core population contains the participants that are most likely to use the app.
+				</p>
+
+				<p><b>72.6%</b> of soccer participants are ages 6-24, indicating the youth market comprises a large portion of the sport's total population. Additionally, The high school growth rate of <b>5.89%</b> is the second-highest of the sports surveyed.
+				</p>
+				<div id='football'></div>
+				     <script type="text/javascript" src="https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown"></script>
+				      <script>
+				        var placeholderDiv = document.getElementById("football");
+				        var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+				        var options = {
+				           hideTabs: true,
+				           width: placeholderDiv.offsetWidth,
+				           height: "600px",
+				           onFirstInteractive: function() {
+				             sheet = viz.getWorkbook().getActiveSheet();
+							worksheetArray = sheet.getWorksheets(); 
+							worksheetArray[0].selectMarksAsync("Sport", "Soccer", 'ADD'); 
+				           }
+				        };
+				        var viz = new tableau.Viz(placeholderDiv, url, options);
+				      </script>
+
 			  </div>
 		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor Two</div>
+			<div class="panel-heading">Organizational Structure</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. 
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
+
+				<!-- Fill Out Org Structure -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Governing Body Requirements: High</h4>
+				</div>
+				<p>U.S. Soccer is the governing body for the sport in America and the amateur market is run by its affiliate the <b>U.S. Youth Soccer Association (USYSA)</b>.</p>
+
+				<p>There is no software currently distributed by U.S. Soccer or USYSA to record and report data, opening an opportunity for a digital scoring application.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Team vs Individual Scoring: High</h4>
+				</div>
+				<p>Soccer is a very <b>team-oriented sport</b> where scoring goals can only be done when teammates work together. The large team size makes passing and communication especially important.</p>
+				
+				<p>Games are played as head-to-head matches between two teams and tournaments are played elimination style.There is only a requirement to record final score and the cards (yellow and red) that individual players receive. No other individual or team statistics are required to be recorded.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Team Size: High</h4>
+				</div>
+				<p>Team Size varies by age group, but for a majority of leagues and age groups the recommended number of players on the field is 11 players. That translates to team sizes that range anywhere from <b>13 to 20 players on a team</b>.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Team Composition: High</h4>
+				</div>
+				<p>Offensive, midfield and defensive players are all tracked using the same statistics, though some stats are more relevant for certain positions. However, the goalie position has different stats to be recorded and is therefore scored separately from other position players. </p>
+
+				<!--Copy starting below here for another subfactor 
+
+				<div class="alert alert-success" role="alert">
+					<h4>Subfactor: Score</h4>
+				</div>
+				<p>You can describe why your sport scored that score in that subfactor here. <b>Use the b tag if you want something to be bold </b></p>
+				<p>Here is another paragraph yay.</p>
+
+				-->
+
 			  </div>
 		</div>
 	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Culture</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Culture -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Acceptance of Technology: Medium</h4>
+				</div>
+				<p>In the past, FIFA, soccer's global governing body, has been reluctant to adopt new technology, such as goal-line sensors to determine goals. However, professional teams and college teams are experimenting with wearable technology, which the German national team claims played a role in its World Cup victory in 2014.</p>
+				
+				<p>Historically, soccer's culture has been slow to adopt new technology, but there are still <b>opportunities for digital scorekeeping applications</b> to alleviate current pain points and to add a new dimension to amateur soccer.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Appreciation for Statistics: Medium</h4>
+				</div>
+				<p>Similar to "Acceptance of Technology," statistics has not historically been a significant factor in soccer. But new studies and statistical analysis are showing the benefit of tracking soccer statistics, which is ushering soccer into the age of data.</p>
+	
+				<p>The sport's ongoing transition into the digital and data-driven modern world opens up a lot of potential for a digital scorekeeping app in the youth market. </p>
+				<div class="alert alert-success" role="alert">
+					<h4>Demand for Content: High</h4>
+				</div>
+				<p>Play-by-play is prevalent in professional and college soccer. This type of live update announces everything other than passes, which would include fouls, penalties, corner kicks, goals, shots, etc.</p>
+
+				<p>While players are only scored as a team, most plays involve individuals either scoring goals, missing shots or committing fouls. Knowing which individual players did what would be of interest to fans.</p>
+				<!--Copy starting below here for another subfactor 
+
+				<div class="alert alert-success" role="alert">
+					<h4>Subfactor: Score</h4>
+				</div>
+				<p>You can describe why your sport scored that score in that subfactor here. <b>Use the b tag if you want something to be bold </b></p>
+				<p>Here is another paragraph yay.</p>
+
+				-->
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Pain Points</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Pain Points -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Game Clock: Medium</h4>
+				</div>
+				<p>Soccer is played in two halves of varying time depending on age group. A majority of age groups play two halves that are between 30 and 45 minutes. The game clock is beneficial in the context of recording statistics in soccer because coaches and fans can get a feel for the progession of the game. This is something coaches will want to know so they can adjust strategy and substitutions, and something fans would like to know as well.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Field Position: High</h4>
+				</div>
+				<p>Where plays are happening on the field is useful in terms of where goals and shots are being taken from by both teams, where fouls are being committed, where opposing players are taking the ball away and stealing possession and other factors. Visualizing these plays can help a coach determine how to adjust strategy and will also be a benefit to fans.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Pace of Game: High</h4>
+				</div>
+				<p>Soccer is played at a very fast pace, especially at the younger ages before passing skills develop. This makes scorekeeping by hand a difficult task for coaches who also have to focus on actually coaching. The pace at which the game is played is a significant pain point that can be alleviated by a digital scorekeeping application.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Benefits from Automation: High</h4>
+				</div>
+				<p>Automating substitutions and when plays happens in relation to the game clock could be automated and would alleviate pain points from recording the data by hand. Automatically sorting statistics for the goalie and other position players would also make scorekeeping much easier.</p>
+				<!--Copy starting below here for another subfactor 
+
+				<div class="alert alert-success" role="alert">
+					<h4>Subfactor: Score</h4>
+				</div>
+				<p>You can describe why your sport scored that score in that subfactor here. <b>Use the b tag if you want something to be bold </b></p>
+				<p>Here is another paragraph yay.</p>
+
+				-->
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Additional Insights</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Additional Insights-->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Competition: Low</h4>
+				</div>
+				<p>Digital scorekeeping for soccer is not covered by many applications, but iScore does currently have one available for $9.99 on the app store. It can be used to record everything down to individual passes, so this represents competition in the youth soccer scorekeeping market.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Benefit from Live Updates: High</h4>
+				</div>
+				<p>As mentioned in "Demand for Content," live updates in the form of play-by-play commentary would be beneficial to fans, and live updates of statistics on a mobile app would allow coaches to create and adjust strategy in real-time.</p>
+
+				<!--Copy starting below here for another subfactor 
+
+				<div class="alert alert-success" role="alert">
+					<h4>Subfactor: Score</h4>
+				</div>
+				<p>You can describe why your sport scored that score in that subfactor here. <b>Use the b tag if you want something to be bold </b></p>
+				<p>Here is another paragraph yay.</p>
+
+				-->
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 </div>
 </div>
 </div>

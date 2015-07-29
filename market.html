@@ -38,9 +38,9 @@ title: Organization
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>
@@ -82,9 +82,9 @@ title: Organization
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>
@@ -114,9 +114,9 @@ title: Organization
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>
@@ -145,9 +145,9 @@ title: Organization
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>
@@ -176,9 +176,9 @@ title: Organization
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>
@@ -200,14 +200,29 @@ title: Organization
 			  <div class="panel-heading">Income</div>
 			  <div class="panel-body">
 			    <p>Income of the sports demographic can indicate if GameChanger will be popular. The thresholds are based on the percent of participants with household income $75,000 or more. The wealthier the demographic is, the more likely users will be to both, have smartphones to download GameChanger and to pay for premium subscriptions. Low-income demographics will yield lower revenue for GameChanger.</p>
+
+			     <div style="padding-top:40px;" id='income'></div>
+		      <script>
+		        var placeholderDiv = document.getElementById("income");
+		        var url = "https://public.tableau.com/views/4SportBreakDown/Overall-IncomeTotalvsCore";
+		        var options = {
+		           hideTabs: true,
+		           width: placeholderDiv.offsetWidth,
+		           height: "400px",
+		           onFirstInteractive: function() {
+		             // The viz is now ready and can be safely used.
+		           }
+		        };
+		        var viz = new tableau.Viz(placeholderDiv, url, options);
+		      </script>
 			  </div>
 
 			  <!-- Table -->
 			  <table class="table table-bordered myTable">
 			  	<tr>
-			   		<th class="danger">Low</th>
-			   		<th class="warning">Medium</th>
-			   		<th class="success">High</th>
+			   		<th class="dangerh">Low</th>
+			   		<th class="warningh">Medium</th>
+			   		<th class="successh">High</th>
 
 			   	</tr>
 			   	<tr>

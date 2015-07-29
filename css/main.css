@@ -8,17 +8,17 @@
      column-gap: 2.5em;
 }
 
-.red{
-	background:#EF5350;
+th.dangerh{
+	background-color:#EF5350;
 	color:white;
 }
 
-.yellow{
+th.warningh{
 	background:#FFE082;
 	color:black;
 }
 
-.green{
+th.successh{
 	background:#66BB6A;
 	color:white;
 }
@@ -208,7 +208,8 @@ th{
 /*first div on volleybal*/
 .volleyball{
 	background:#4ca176 ;
-	height:70px;
+	height:auto;
+	padding-bottom:5px;
 }
 
 #headtxt{
