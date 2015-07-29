@@ -15,15 +15,25 @@ title: Organization
 <div class="other">
 
 
-<div class="container-fluid" style="margin-bottom:300px;">
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-8 col-md-offset-2" style="padding-top:40px;" id='tableauViz'></div>
+     <script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+      <script>
+        var placeholderDiv = document.getElementById("tableauViz");
+        var url = "https://public.tableau.com/views/4SportBreakDown/WhereandIncome";
+        var options = {
+           hideTabs: true,
+           width: placeholderDiv.offsetWidth,
+           height: "600px",
+           onFirstInteractive: function() {
+             // The viz is now ready and can be safely used.
+           }
+        };
+        var viz = new tableau.Viz(placeholderDiv, url, options);
+      </script>
+    </div>
 
-	
-			<center> <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1006px; height: 828px;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4S&#47;4SportBreakDown&#47;4SportBreakDown&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1006' height='828' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='4SportBreakDown&#47;4SportBreakDown' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4S&#47;4SportBreakDown&#47;4SportBreakDown&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='tooltip' value='yes'/><param name='showTabs' value='n' /><param name='bootstrapWhenNotified' value='true' /></object></div></center>
-	</div>
-
-	
-
-	<br><br><br><center><a class="page-scroll btn btn-default" href="#graph"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
 </div>
 
 
@@ -32,7 +42,7 @@ title: Organization
 	<!--This is the start of a subfactor panel -->
 	<!--High School Participation-->
 	<div class="row" style="padding-top:20px;">
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading"> High School Participation 2013-2014</div>
@@ -55,10 +65,26 @@ title: Organization
 			   	</tr>
 			   			   	
 			  </table>
+
+			<div style="padding-top:40px;" id='highschool'></div>
+		      <script>
+		        var placeholderDiv = document.getElementById("highschool");
+		        var url = "https://public.tableau.com/views/4SportBreakDown/USHSParticipation";
+		        var options = {
+		           hideTabs: true,
+		           width: placeholderDiv.offsetWidth,
+		           height: "600px",
+		           onFirstInteractive: function() {
+		             // The viz is now ready and can be safely used.
+		           }
+		        };
+		        var viz = new tableau.Viz(placeholderDiv, url, options);
+		      </script>
+    </div>
 		</div>
 	</div>
 
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading">High School Five Year Growth</div>
@@ -90,7 +116,7 @@ title: Organization
 	<!--This is the start of a subfactor panel -->
 	<!--Core Population-->
 	<div class="row" style="padding-top:20px;">
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading">Core Population</div>
@@ -121,7 +147,7 @@ title: Organization
 	<!--This is the start of a subfactor panel -->
 	<!--Percent Core Participation-->
 
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading">Percent of Core Participants of Total Population</div>
@@ -152,7 +178,7 @@ title: Organization
 	<!--This is the start of a subfactor panel -->
 	<!--Core Growth Rate-->
 	<div class="row" style="padding-top:20px;">
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading">Core Growth Rate</div>
@@ -181,7 +207,7 @@ title: Organization
 
 	<!--This is the start of a subfactor panel -->
 	<!--Income-->
-	<div class="col-md-6">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
 			<!-- Default panel contents -->
 			  <div class="panel-heading">Income</div>
