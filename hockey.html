@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Football
+title: Hockey
 ---
+<!--
+	Instructions: Fill in name of sport, pros, cons and then each subfactor panel
+-->
 
-
-<div class="volleyball jumbotron">
-  
-  <center><h1 style="padding-top:0px;"><img style="margin-right:30px;" src="img/volleyball.png" width="50px">Hockey</h1>
+<!-- Don't Touch-->
+<div class="container">
+<div class="jumbotron volleyball">
+  <h1 style="padding-top:0px">Ice Hockey</h1>
   
 </div>
 </div>
@@ -15,84 +18,235 @@ title: Football
 <!--Pros and Cons-->
 <div class="other">
 
-	<div class="sport1">
 	<div class="container-fluid">
 		<div class="row">
 
 			<!-- Pros -->
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<div class="panel panel-success">
 					<div class="panel-heading">Pros</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  					  <li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+
+						   <!-- Fill out Pros-->
+	  					  <li class="list-group-item">Clear need for digital scoring, upgrade from pencil and paper as recorded by scorekeepers currently </li>
+						  <li class="list-group-item">Strengthening culture for technology, beginning in the NHL with player tracking and trickling down into the lower levels</li>
+
 						</ul>
 				   </div>
 				</div>
 			</div>
 
 			<!-- Cons -->
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="panel panel-danger">
 					<div class="panel-heading">Cons</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  						<li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+							<!-- Fill Out Cons, delete the row if you're not using it-->
+	  					  <li class="list-group-item">Small overall market size, in total participants, high school participants, and core participants</li>
+
+
 						</ul>
 				  </div>
 				</div>
 			</div>	
+
 		</div>
-		<center>  <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
+		
 	</div>
 	</div>
-
 </div>
 
-	
-<div class="container" id="factors">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3"> 
-	        <h1>Factor Analysis</h1><hr><br>
-	</div>
-</div>
-</div>
+
 
 <div class="other">
+	<div class="row">
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
+        <h1>Factor Analysis</h1><hr>
+      </div>
+    </div>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor One</div>
+			<div class="panel-heading">Market Size and Demographics</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. </p>
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	<p>Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
-			    	<div class="alert alert-danger" role="alert">Oh no Volleyball is really bad at this.</div>ce sed augue tempus, tincidunt lectus a, ullamcorper lectus.
-			    </p>
+
+				<!--Fill out Market Size-->
+				<p>Ice Hockey participation in the US has been trending upwards since the 90ís according to USA Hockey seeing growth rates of 8.63% and 14.28% over 5 and 10 year periods, respectively. However given the large rate, the sport only has 2,421,000 total participants accordingly to SFIA.</p>
+
+
+				<p>The sport is overwhelmingly dominated by males, making up 74.7% of total participation. The most populated age demographic is 6-17 year olds, accounting for 41.2% of the total core participants</p>
+				<p>Geographically, the sport is ruled by the colder climate. The Great lakes region, the Mid-Atlantic, and the New England regions account for the overwhelming majority of participants.</p>
+
+
+				<div id='football'></div>
+				     <script type="text/javascript" src="https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown"></script>
+				      <script>
+				        var placeholderDiv = document.getElementById("football");
+				        var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+				        var options = {
+				           hideTabs: true,
+				           width: placeholderDiv.offsetWidth,
+				           height: "600px",
+				           onFirstInteractive: function() {
+				             sheet = viz.getWorkbook().getActiveSheet();
+							worksheetArray = sheet.getWorksheets(); 
+							worksheetArray[0].selectMarksAsync("Sport", "Ice Hockey", 'ADD'); 
+				           }
+				        };
+				        var viz = new tableau.Viz(placeholderDiv, url, options);
+				      </script>
 			  </div>
 		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor Two</div>
+			<div class="panel-heading">Organizational Structure</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. 
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
+
+				<!-- Fill Out Org Structure -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Governing Body Requirements: High</h4>
+				</div>
+				<p>USA hockey oversees the entire club hockey scene. Regional affiliates host sponsored tournaments that team within the region travel to play. They also have state, regional, and national competitions every year to determine the best teams for each age group as well as provide exposure to the players.</p>
+				<p>At these USA Hockey sponsored tournaments, scorekeepers are required at each game to track the basic statistics and submit these to the tournament officials after the game. </p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Team vs Individual: High</h4>
+				</div>
+				<p>While at the most basic level the scoring of hockey is one teamís goals against the other, there is a high level of individual scoring that can be kept by separate scorekeepers. However the official scorekeeper is only responsible for tracking goals, penalties, and substitutions.</p>
+
+
+				<!--Copy starting below here for another subfactor -->
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Team Size: Medium</h4>
+				</div>
+				<p>Ice Hockey teams are moderately sized ranging from 12-15 players with 6 on the ice at all times.</p>
+					
+				<div class="alert alert-warning" role="alert">
+					<h4>Team Composition: Medium</h4>
+				</div>
+				<p>The statistics for all players on the rink are the same except for goalie are the same. The goalie has separate statistics that make for more in-depth and diverse numbers.</p>
+
 			  </div>
 		</div>
 	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Culture</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Culture -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Acceptance for Technology: Medium</h4>
+				</div>
+				<p>At the professional level, the NHL has begun to implement player tracking to analyze things such as puck possession and defensive positioning. While this wonít be in the youth game for a long time, the overwhelming amount of young players leads to an overall culture of acceptance for technology</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Appreciation for Statistics: Medium</h4>
+				</div>
+				<p>While hockey provides an ability for in-depth statistical analysis similar to basketball, it is ultimately up to the coach what statistics he/she deems necessary. Overall, the culture in hockey is shifting towards one with a greater appreciation for stats.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Demand for Content: Medium</h4>
+				</div>
+				<p>At the professional level, play by play and individual player statistics have become the norm. There is nothing like this currently at the youth level leaving a clear gap in individual player tracking, thus creating a demand.</p>
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Pain Points</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Pain Points -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Game Clock: High</h4>
+				</div>
+				<p>Ice hockey has 3 periods, varying in length from 15-20 minutes each. Throughout the game, stats such as penalties and goals are charted for the minute in which they happen. At the younger ages, the clock is often stopped for substitutions.</p>
+
+
+				<div class="alert alert-success" role="alert">
+					<h4>Field Position: High</h4>
+				</div>
+				<p>Throughout the game, players are constantly moving around the ice. In this category, hockey is very similar to basketball as it is important to track where shots are taken from in order to gain an understanding of tendencies that are more successful.</p>
+
+
+				<div class="alert alert-success" role="alert">
+					<h4>Pace of Game: High</h4>
+				</div>
+				<p>On such a small rink with the puck hovering on ice, the pace of play for hockey is one of the quickest. Thus having a device that could make scoring quicker and easier would be very beneficial.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Benefit of Automation: High</h4>
+				</div>
+				<p>By automating scoring, it would cut out the need for a scorekeeper at tournaments and would allow for a more in-depth analysis of statistics including assists, goalie stats, and tendencies.</p>
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Additional Insights</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Additional Insights-->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Existing Competition: High</h4>
+				</div>
+				<p>With many scoring apps beginning to enter the market, there would be a high barrier of entry to ice hockey. However compared to these other apps, the capabilities of GameChanger blow them out of the water.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Benefits from Live Updates: Medium</h4>
+				</div>
+				<p>Fans and parents watching live from home will be able to follow big events throughout the game such as shots, saves, goals, and penalties. Due to the pace of play being so high, there would be no way to keep updated on everything happening.
+
+</p>
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 </div>
 </div>
 </div>
