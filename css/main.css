@@ -52,7 +52,8 @@ body{
 #youth{
 	background:#4ca176;
 	padding-top:100px;
-	height:60%;
+	padding-bottom:100px;
+	height:auto;
 }
 
 .list
@@ -68,38 +69,44 @@ body{
 #solution{
 	background:#4ca176;
 	padding-top:100px;
-	height:700px;
+	padding-bottom:100px;
+	height:auto;
 }
 
 #research{
 	background:#2f3138;
-	height:130%;
 	padding-top:100px;
+	padding-bottom:100px;
+	height:auto;
 }
 
 #next{
 	background:#4ca176;
 	padding-top:100px;
-	height:170%;
+	padding-bottom:100px;
+	height:auto;
 }
 
 #ten{
 	background:white;
 	color:black;
 	padding-top:100px;
-	height:800px;
+	padding-bottom:100px;
+	height:auto;
 }
 
 #eval{
 	background:#2f3138;
 	padding-top:100px;
-	height:800px;
+	padding-bottom:100px;
+	height:auto;
 }
 
 #sports{
 	background:#4ca176;
 	padding-top:100px;
-	height:700px;
+	padding-bottom:50px;
+	height:auto;
 }	
 .thumbnail {
     position:relative;
