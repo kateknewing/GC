@@ -64,7 +64,7 @@ title: Volleyball
 
 <div class="other">
 	<div class="row">
-      <div class="col-md-6 col-md-offset-3" style="color:#4ca176;"> 
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
         <h1>Factor Analysis</h1><hr>
       </div>
     </div>
@@ -79,6 +79,25 @@ title: Volleyball
 				<p>Swimming has moderately sized participation at both the high school level and core participation of the total population ages 6-24. The sport has seen high growth in recent years in both areas. </p>
 
 				<p>Swimming has the highest percent of participants with a high income level out of any of the 10 sports.</p>
+
+
+				<div id='football'></div>
+				     <script type="text/javascript" src="https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown"></script>
+				      <script>
+				        var placeholderDiv = document.getElementById("football");
+				        var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+				        var options = {
+				           hideTabs: true,
+				           width: placeholderDiv.offsetWidth,
+				           height: "600px",
+				           onFirstInteractive: function() {
+				             sheet = viz.getWorkbook().getActiveSheet();
+							worksheetArray = sheet.getWorksheets(); 
+							worksheetArray[0].selectMarksAsync("Sport", "Swimming & Diving", 'ADD'); 
+				           }
+				        };
+				        var viz = new tableau.Viz(placeholderDiv, url, options);
+				      </script>
 
 
 			  </div>

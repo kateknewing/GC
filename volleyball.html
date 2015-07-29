@@ -54,7 +54,7 @@ title: Volleyball
 
 <div class="other">
 	<div class="row">
-      <div class="col-md-6 col-md-offset-3" style="color:#4ca176;"> 
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
         <h1>Factor Analysis</h1><hr>
       </div>
     </div>
@@ -68,7 +68,23 @@ title: Volleyball
 				<p>The gender split in the sport is about <b>60% female participants</b> and <b>40% male participants.</b> About 60% of players are below the age of 24, with <b>13-17 year olds being the dominant age range</b> of the population.</p>
 				<p>Geographically, volleyball is most popular along the <b>East Coast</b>. Specifically the regions of the South Atlantic, Mid Atlantic and East North Central.
 			    </p>
-
+			    <div id='football'></div>
+				     <script type="text/javascript" src="https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown"></script>
+				      <script>
+				        var placeholderDiv = document.getElementById("football");
+				        var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+				        var options = {
+				           hideTabs: true,
+				           width: placeholderDiv.offsetWidth,
+				           height: "600px",
+				           onFirstInteractive: function() {
+				             sheet = viz.getWorkbook().getActiveSheet();
+							worksheetArray = sheet.getWorksheets(); 
+							worksheetArray[0].selectMarksAsync("Sport", "Volleyball", 'ADD'); 
+				           }
+				        };
+				        var viz = new tableau.Viz(placeholderDiv, url, options);
+				      </script>
 			  </div>
 		</div>
 	</div>
