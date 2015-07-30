@@ -23,9 +23,6 @@ th.successh{
 	color:white;
 }
 
-.green{
-	background:#4ca176;
-}
 
 h1{
 	text-transform: uppercase;
@@ -133,6 +130,16 @@ body{
 	padding-bottom:50px;
 	height:auto;
 }	
+
+#sports2{
+	background:white;
+	padding-top:100px;
+	padding-bottom:50px;
+	height:auto;
+	color:black;
+}	
+
+
 .thumbnail {
     position:relative;
     overflow:hidden;
