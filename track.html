@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Football
+title: Volleyball
 ---
+<!--
+	Instructions: Fill in name of sport, pros, cons and then each subfactor panel
+-->
 
-
-<div class="volleyball jumbotron">
-  
-  <center><h1 style="padding-top:0px;"><img style="margin-right:30px;" src="img/volleyball.png" width="50px">Track and Field</h1>
+<!-- Don't Touch-->
+<div class="container">
+<div class="jumbotron volleyball">
+  <h1>Track and Field</h1>
   
 </div>
 </div>
@@ -15,84 +18,240 @@ title: Football
 <!--Pros and Cons-->
 <div class="other">
 
-	<div class="sport1">
 	<div class="container-fluid">
 		<div class="row">
 
 			<!-- Pros -->
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<div class="panel panel-success">
 					<div class="panel-heading">Pros</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  					  <li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+
+						   <!-- Fill out Pros-->
+	  					  <li class="list-group-item">Huge overall participation in the sport, as it covers all three seasons with cross country, indoor track, and outdoor track</li>
 						</ul>
 				   </div>
 				</div>
 			</div>
 
 			<!-- Cons -->
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="panel panel-danger">
 					<div class="panel-heading">Cons</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  						<li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+							<!-- Fill Out Cons, delete the row if you're not using it-->
+	  					  <li class="list-group-item">No room for statistical analysis, merely reporting times for races and places finished in</li>
+						  <li class="list-group-item">The current GameChanger model doesn’t work for a track as there are no benefits to live automation  </li>
+						  <li class="list-group-item">Entry barrier is high due to the amount of meet organizing software that exists</li>
 						</ul>
 				  </div>
 				</div>
 			</div>	
+
 		</div>
-		<center>  <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
+		
 	</div>
 	</div>
-
 </div>
 
-	
-<div class="container" id="factors">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3"> 
-	        <h1>Factor Analysis</h1><hr><br>
-	</div>
-</div>
-</div>
+
 
 <div class="other">
+	<div class="row">
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
+        <h1>Factor Analysis</h1><hr>
+      </div>
+    </div>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor One</div>
+			<div class="panel-heading">Market Size and Demographics</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. </p>
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	<p>Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
-			    	<div class="alert alert-danger" role="alert">Oh no Volleyball is really bad at this.</div>ce sed augue tempus, tincidunt lectus a, ullamcorper lectus.
-			    </p>
+
+
+
+				<!--Fill out Market Size-->
+				<p>Track has one of the highest high school participation rates, totally 1,042,348 participants according to the NHFS. It is growing on a 5 year rate of 1.72% in high school. Overall the track and field community has 2,263,000 core participants, giving it a high participation rate.</p>
+
+				<p>The sport is pretty evenly split between the male and female genders. Males total 56.3 percent of the total population while females make up 43.7 percent.</p>
+
+				<p>Geographically, the sport is diverse, with no region truly dominating the sport.</p>
+
+				<div id='tableauViz'></div>
+						<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+						<script>
+						var placeholderDiv = document.getElementById("tableauViz");
+						var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+						var options = {
+						hideTabs: true,
+						width: placeholderDiv.offsetWidth,
+						height: "600px",
+						onFirstInteractive: function() {
+							sheet = viz.getWorkbook().getActiveSheet();
+	      					worksheetArray = sheet.getWorksheets();
+	      					worksheetArray[0].selectMarksAsync("Sport", "Track and Field", 'ADD');
+						}
+						};
+						var viz = new tableau.Viz(placeholderDiv, url, options);
+						</script>
 			  </div>
 		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor Two</div>
+			<div class="panel-heading">Organizational Structure</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. 
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
+
+				<!-- Fill Out Org Structure -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Governing Body Requirements: High</h4>
+				</div>
+				<p>USA Track & Field oversees much of the club track scene. They have member associations but don’t require reporting to any specific database. USATF keep track of the best times and rankings by event and age group</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team vs. Individual Scoring: Low</h4>
+				</div>
+				<p>Each event is scored individually. Depending on the place finished, each position is assigned a specific amount of points that goes towards the overall team score.</p>
+
+				<!--Copy starting below here for another subfactor -->
+
+				<div class="alert alert-success" role="alert">
+					<h4>Team Size: High</h4>
+				</div>
+				<p>Track and field programs carry a large amount of athletes due to the different events and different age groups. Organizations often have 50+ athletes in total.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team Composition: Low</h4>
+				</div>
+				<p>While there are different events, each event is either scored by time or distance, thus creating a low opportunity for differentiation of statistics. </p>
+
 			  </div>
 		</div>
 	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Culture</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Culture -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Acceptance for Technology: Medium</h4>
+				</div>
+				<p>Track is beginning to gain traction at the more advanced levels for an appreciation for new technology. Electronic laser timing is used for many events as well as GPS tracking for some cross country events.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Appreciation for Statistics: Low</h4>
+				</div>
+				<p>There are no statistics in track beyond time and distances so there is no real way to appreciate statistic</p>
+
+				<!--Copy starting below here for another subfactor -->
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Demand for Content: Low</h4>
+				</div>
+				<p>There is evidence of desire for play-by-play analysis at the youth level leaving a clear gap in individual player tracking.</p>
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Pain Points</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Pain Points -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Game Clock: Low</h4>
+				</div>
+				<p>There is no overall game clock for track and field meets, but rather just individual times.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Field Position: Low</h4>
+				</div>
+				<p>Again, this category doesn’t score for track and field as participants are required to stay in their designated lanes.</p>
+
+				<!--Copy starting below here for another subfactor -->
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Pace of Game: Low</h4>
+				</div>
+				<p>There is no continuous play as there is only individual times for events.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Benefit of Automation: Low</h1>
+				</div>
+				<p>By automating scoring, the only thing you would be able to do is have live updates on placement in races, which is fairly inconsequential. </p>
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Additional Insights</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Additional Insights-->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Existing Competition: Low</h4>
+				</div>
+				<p>There is already many apps prevalent that have meet tracking software and keep a database of times for each meet scored using that software</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Benefits from Live Updates: Low</h4>
+				</div>
+				<p>The only way for live updates would be posting times after a race is completed which provides little ability for statistical analysis. </p>
+
+				<!--Copy starting below here for another subfactor
+
+				<div class="alert alert-success" role="alert">
+					<h4>Subfactor: Score</h4>
+				</div>
+				<p>You can describe why your sport scored that score in that subfactor here. <b>Use the b tag if you want something to be bold </b></p>
+				<p>Here is another paragraph yay.</p>-->
+
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 </div>
 </div>
 </div>
