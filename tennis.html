@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Football
+title: Hockey
 ---
 
-
-<div class="volleyball jumbotron">
-  
-  <center><h1 style="padding-top:0px;"><img style="margin-right:30px;" src="img/volleyball.png" width="50px">Tennis</h1>
+<div class="container">
+<div class="jumbotron volleyball">
+  <h1 style="padding-top:0px">Tennis</h1>
   
 </div>
 </div>
@@ -15,85 +14,217 @@ title: Football
 <!--Pros and Cons-->
 <div class="other">
 
-	<div class="sport1">
 	<div class="container-fluid">
 		<div class="row">
 
 			<!-- Pros -->
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<div class="panel panel-success">
 					<div class="panel-heading">Pros</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  					  <li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+
+						   <!-- Fill out Pros-->
+	  					  <li class="list-group-item">Fast paced and oppertunity for advanced statistics</li>
+						  <li class="list-group-item">32% of tennis players have a household income greater than $100k</li>
+						  <li class="list-group-item">Strong central governing body (USTA)</li>
 						</ul>
 				   </div>
 				</div>
 			</div>
 
 			<!-- Cons -->
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="panel panel-danger">
 					<div class="panel-heading">Cons</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  						<li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+							<!-- Fill Out Cons, delete the row if you're not using it-->
+	  					  <li class="list-group-item">Only 36% of participants are between 6-17.</li>
+						  <li class="list-group-item">No positions that would provide separate stats.</li>
+						  <li class="list-group-item">Tennis is scored on individual feats.</li>
 						</ul>
 				  </div>
 				</div>
 			</div>	
+
 		</div>
-		<center>  <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
 	</div>
 	</div>
-
 </div>
 
-	
-<div class="container" id="factors">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3"> 
-	        <h1>Factor Analysis</h1><hr><br>
-	</div>
-</div>
-</div>
 
 <div class="other">
+	<div class="row">
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
+        <h1>Factor Analysis</h1><hr>
+      </div>
+    </div>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor One</div>
-			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. </p>
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	<p>Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
-			    	<div class="alert alert-danger" role="alert">Oh no Volleyball is really bad at this.</div>ce sed augue tempus, tincidunt lectus a, ullamcorper lectus.
-			    </p>
+			<div class="panel-heading">Market Size and Demographics</div>
+				<div class="panel-body">
+					<!--Fill out Market Size-->
+					<p>Tennis has the <b>6th highest participation</b> at the <b>high school</b> level. According to NFHS, <b>338363</b> high school athletes wrestled in the 2013-2014 school year. This accounts for <b>4.39% of total high school sports </b>participation.</p>
+
+					<p>Tennis's high school growth rate is down .22%. According to TIA (Tennis Industry Association) The gender split is fairly even with males making up 56.9% and females 43.10%.</p>
+
+					<div class="col-md-8 col-md-offset-2" id='tableauViz'></div>
+						<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+						<script>
+						var placeholderDiv = document.getElementById("tableauViz");
+						var url = "https://public.tableau.com/views/4SportBreakDown/USHSParticipation";
+						var options = {
+						hideTabs: true,
+						width: placeholderDiv.offsetWidth,
+						height: "600px",
+						onFirstInteractive: function() {
+							sheet = viz.getWorkbook().getActiveSheet();
+	      					sheet.applyFilterAsync(
+								"Sport",
+								"Tennis",
+								tableau.FilterUpdateType.REPLACE);
+						}
+						};
+						var viz = new tableau.Viz(placeholderDiv, url, options);
+						</script>
 			  </div>
 		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor Two</div>
+			<div class="panel-heading">Organizational Structure</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. 
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
+
+				<!-- Fill Out Org Structure -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Governing Body Requirements: High</h4>
+				</div>
+				<p>There is a nationwide organization the <b>USTA</b> (United States Tennis Association), which provides a way for schools to bring tennis programs to their schools. They provide <b>services for all age groups</b> and use a system called TennisLink to connect everyone, manage leagues, and offer a place to upload their stats too. </p>
+
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Team Size: Medium</h4>
+				</div>
+				<p>The size of tennis teams range from <b>7 - 12 participants</b>. This is all dependant on the age group with juniors having and average of 8 and high/college around 11 players.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team Composition: Low</h4>
+				</div>
+				<p>Athletes are scored individually and the results of their matches count torward the team score. There are <b>no separate stats</b> recorded for <b>singles or doubles</b>, because there are no distict positions.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team vs. Individual: Low</h4>
+				</div>
+				<p>Tennis is an <b>indivdual sport</b> where players contribute to the final score, they are the deciding factor for if the team recieves points. There is some oppertunity for <b>analytics</b>, but they would only be <b>useful after the match, since coaches are unable to advise their player during a mathc</b>. However, coaches and players would <b>want to see the stats for up coming opponents</b>, so they could prepare appropriately.
+				</p> 
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Culture</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Culture -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-success" role="alert">
+					<h4>Acceptance of Technology: High</h4>
+				</div>
+				<p>In the professional leagues tennis has Hawk-Eye which tracks the tennis ball and player's positioning on the court. <b>IBM's PointStream</b> technology provides <b>analytic assessments</b> of players and statistics. <b>3D technology</b> has been used to track a players movement and <b>determine the risk for injury</b> for each serve.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Appreciation for Statistics: Low</h4>
+				</div>
+				<p>Tennis at the professional level has the ability to access advanced analytics, but at the <b>youth level</b> the game is <b>so fast</b> that only the <b>score of each set is recored</b>. More advanced stats could be recorded, but <b>paper and pencil</b> only allows <b>minimal scoring</b>.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Demand for Content: Medium</h4>
+				</div>
+				<p>Tennis <b>scores are changing often enough</b> to where live updates would provide a <b>constant stream of information</b>. Live <b>advanced stats</b> would require for more <b>advanced technology</b> or a <b>better scoring systems</b> to be able to keep track of the match, since tennis is one of the fastest scoring sports.</p>
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Pain Points</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Pain Points -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Field Position: Low</h4>
+				</div>
+				<p>Positioning in tennis <b>is of no relevance</b>, because matches happen between 2 - 4 players on one court. Doubles does require positioning, but no distinct stats are taken for the front and back players.</p>
+				
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Game Clock: Low</h4>
+				</div>
+				<p><b>No time</b> is kept in tennis, so a player keeps on playing until a match has been decided.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Pace of Game: High</h4>
+				</div>
+				<p>Tennis has a <b>fast pace</b> with <b>constant scoring and player actions</b> happening on the court. Advanced stats could be recorded every 1-2 seconds, beacuse of the back and forth racketing of the ball.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Benefit from Automation: High</h4>
+				</div>
+				<p>Scorekeepers could keep <b>track of the types of returns and serves</b>. For example if it was a back hand return, which resulted in a fault. Also <b>tracking where the ball had landed</b> would provide insight into a players accuracy.</p>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Additional Insights</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Additional Insights-->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Existing Competition: Medium</h4>
+				</div>
+				<p>The existing competitors include: <v>Track Tennis, Tennis Trakker, and Tennis Link</b>. These apps cover it all, Tennis Link provides leagues and users bases for players to join and upload there stats too. Track Tennis provides a way to score a tennis game via a mobile device and record more indepth stats. Lastly, Tennis Trakker provides visualization tools for stats recorded on the app. </p>
+				<p>The market is most of the basis covered with <b>Tennis Link</b> being the most widely accpeted with a <b>330,000 users</b>.</p>
+				<div class="alert alert-success" role="alert">
+					<h4>Benefits from Live Updates: High</h4>
+				</div>
+				<p>Live tennis updates would be <b>extremly useful</b>, because the game <b>happens so fast</b>. There is <b>constant action and scoring</b> on the court with the <b>ability to track</b> these events given better tools. This would result in a <b>constant stream of live updates</b> that could be provided to fans.</p>
 			  </div>
 		</div>
 	</div>
 </div>
 </div>
 </div>
-</div>
+</body></html>

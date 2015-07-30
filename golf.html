@@ -80,6 +80,26 @@ title: Gold
 				<!--Fill out Market Size-->
 				<p>High school participation for golf is relatively low at <b>223,638 participants</b> in 2013, and the 5-year growth rate is also a lackluster -1.67%. The percentage of participants that come from households that earn over $75,000 a year is towards the higher end of the specturm at 55%. This is the demographic that is most likely to purchase the app.</p>
 
+				<div class="col-md-8 col-md-offset-2" id='tableauViz'></div>
+						<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+						<script>
+						var placeholderDiv = document.getElementById("tableauViz");
+						var url = "https://public.tableau.com/views/4SportBreakDown/USHSParticipation";
+						var options = {
+						hideTabs: true,
+						width: placeholderDiv.offsetWidth,
+						height: "600px",
+						onFirstInteractive: function() {
+							sheet = viz.getWorkbook().getActiveSheet();
+	      					sheet.applyFilterAsync(
+								"Sport",
+								"Golf",
+								tableau.FilterUpdateType.REPLACE);
+						}
+						};
+						var viz = new tableau.Viz(placeholderDiv, url, options);
+						</script>
+
 			  </div>
 		</div>
 	</div>
