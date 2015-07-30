@@ -1,99 +1,235 @@
 ---
 layout: default
-title: Football
+title: Wrestling
 ---
 
+<div class="container">
+<div class="jumbotron volleyball">
+  <h1>Wrestling</h1>
+  
+</div>
+</div>
 
-<div class="volleyball jumbotron">
-  
-  <center><h1 style="padding-top:0px;"><img style="margin-right:30px;" src="img/volleyball.png" width="50px">Wrestling</h1>
-  
-</div>
-</div>
+
 
 
 <!--Pros and Cons-->
 <div class="other">
 
-	<div class="sport1">
 	<div class="container-fluid">
 		<div class="row">
 
 			<!-- Pros -->
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<div class="panel panel-success">
 					<div class="panel-heading">Pros</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  					  <li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+
+						   <!-- Fill out Pros-->
+	  					  <li class="list-group-item">Demand for live updates throughout a match.</li>
+						  <li class="list-group-item">Automation would allow for more stats to be recorded.</li>
+
 						</ul>
 				   </div>
 				</div>
 			</div>
 
 			<!-- Cons -->
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="panel panel-danger">
 					<div class="panel-heading">Cons</div>
 					<div class="panel-body">
 						<ul class="list-group">
-	  						<li class="list-group-item">Cras justo odio</li>
-						  <li class="list-group-item">Dapibus ac facilisis in</li>
-						  <li class="list-group-item">Morbi leo risus</li>
-						  <li class="list-group-item">Porta ac consectetur ac</li>
-						  <li class="list-group-item">Vestibulum at eros</li>
+
+							<!-- Fill Out Cons, delete the row if you're not using it-->
+	  					  <li class="list-group-item">Lack of youth 6-12 organizations.</li>
+						  <li class="list-group-item">No positions that would provide separate stats.</li>
+						  <li class="list-group-item">Wrestling is scored on individual feats.</li>
 						</ul>
 				  </div>
 				</div>
 			</div>	
+
 		</div>
-		<center>  <a class="page-scroll btn btn-default" href="#factors"><span class="glyphicon glyphicon-triangle-bottom"aria-hidden="true"></span></a></center>
 	</div>
 	</div>
-
 </div>
 
-	
-<div class="container" id="factors">
-	<div class="row">
-	<div class="col-md-6 col-md-offset-3"> 
-	        <h1>Factor Analysis</h1><hr><br>
-	</div>
-</div>
-</div>
+
 
 <div class="other">
+	<div class="row">
+      <div class="col-md-8 col-md-offset-2" style="color:#4ca176;"> 
+        <h1>Factor Analysis</h1><hr>
+      </div>
+    </div>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor One</div>
-			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. </p>
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	<p>Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
-			    	<div class="alert alert-danger" role="alert">Oh no Volleyball is really bad at this.</div>ce sed augue tempus, tincidunt lectus a, ullamcorper lectus.
-			    </p>
+			<div class="panel-heading">Market Size and Demographics</div>
+				<div class="panel-body">
+					<!--Fill out Market Size-->
+					<p>Wrestling has the <b>7th highest participation</b> at the <b>high school</b> level. According to NFHS, <b>278890</b> high school athletes wrestled in the 2013-2014 school year. This accounts for <b>3.62% of total high school sports </b>participation. According to SFIA, wrestling has <b>1,829,000 participants where 49.9% of participants</b> are between the ages of <b>6 to 17</b>.</p>
+
+					<p>Wrestling has seen a negative 5 year growth rate - down 10.9% and up 0.16% in high school participation.</p>
+
+					<div id='tableauViz'></div>
+						<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+						<script>
+						var placeholderDiv = document.getElementById("tableauViz");
+						var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+						var options = {
+						hideTabs: true,
+						width: placeholderDiv.offsetWidth,
+						height: "600px",
+						onFirstInteractive: function() {
+							sheet = viz.getWorkbook().getActiveSheet();
+	      					worksheetArray = sheet.getWorksheets();
+	      					worksheetArray[0].selectMarksAsync("Sport", "Wrestling", 'ADD');
+						}
+						};
+						var viz = new tableau.Viz(placeholderDiv, url, options);
+						</script>
 			  </div>
 		</div>
 	</div>
 </div>
+
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 		<div class="panel panel-primary myPan">
-			<div class="panel-heading">Factor Two</div>
+			<div class="panel-heading">Organizational Structure</div>
 			<div class="panel-body">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet elementum libero quis volutpat. Aliquam molestie erat eu imperdiet facilisis. 
-			    	<div class="alert alert-success" role="alert">Here goes something Volleyball is really good at.</div>
-			    	Vestibulum eu ante dui. Nullam dolor nibh, ultrices vitae tempor a, dapibus eget erat. Fusce sed augue tempus, tincidunt lectus a, ullamcorper lectus.</p>
+
+				<!-- Fill Out Org Structure -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Governing Body Requirements: Medium</h4>
+				</div>
+				<p>There is a nationwide organization <b>NWCA</b> (National Wrestling Coaches Association), which covers <b>high school and college across all 50 states</b>. It provides team schedules, rosters, and statitics for each wrestler. There are many small organizations like AAU and NUWAY which extend into <b>6-12 youth but are lacking</b> in coverage.</p>
+
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Team Size: Medium</h4>
+				</div>
+				<p>The size of wrestling teams range from 12 - 25 wrestlers. There is only ever one team memeber on the mat at a time for team duals.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team Composition: Low</h4>
+				</div>
+				<p>Wrestling <b>doesn't have different positions</b> and the <b>same stats</b> are recorded for each wrestler throughout a match. The only thing to take note of is individual weight classes, which usually range between 12-17 classes.</p>
+
+				<div class="alert alert-danger" role="alert">
+					<h4>Team vs. Individual: Low</h4>
+				</div>
+				<p>Wrestling is an <b>indivdual sport</b> where players contribute to the final score, but the are the deciding factor for if the team recieves points. There is some oppertunity for <b>analytics</b>, but they would only be <b>useful after the match</b>. However, coaches and wrestlers would <b>want to see the stats for up coming opponents</b>, so they could prepare appropriately.
+				</p> 
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Culture</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Culture -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Acceptance of Technology: Low</h4>
+				</div>
+				<p>At the high school level big wrestling tourtaments are being streamed via Track Wrestling and at the college/olympic level Flo Wrestling is being used to do the same. Track Wrestling also provides tourtament managing software and services primarily only at the largest and most popular toutaments. There are a <b>few apps</b> that track wrestling mathces, but they are <b>not widely accpeted</b>.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Appreciation for Statistics: Medium</h4>
+				</div>
+				<p>Wrestling stats are recorded and <b>valued more for accomplishment</b> reasons. Wrestlers keep track of wins, takedowns, pins, escapes, and the points they scored. The speed of the match provides for <b>easy stats recording</b>, therefore there hasn't been a huge push to record more stats.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Demand for Content: High</h4>
+				</div>
+				<p>There is plenty going on during a wrestling match to where <b>updates</b> could be needed <b>every 10-20 seconds</b>. Both an individual's stats/scores and team's score can be updated. During tourtaments multiple updates for wrestlers on the same team would be necessary.</p>
+			  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Pain Points</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Pain Points -->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-danger" role="alert">
+					<h4>Field Position: Low</h4>
+				</div>
+				<p>Positioning in wrestling <b>is of no relevance</b>, because matches happen one on one within a bounded area. As far as field position goes the wrestler has three different starting positions throughout the match.</p>
+				
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Game Clock: Medium</h4>
+				</div>
+				<p>Wrestling matches usually have some stopping and starting of the game clock depending on if a wrestler is injuried or out of bounds. There is <b>one score keeper</b> who <b>records times</b> during each of the 3 periods whenever <b>falls(pins), injury, or tech falls</b>(More than 15 points scored) occur.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Pace of Game: Medium</h4>
+				</div>
+				<p>Wrestling has a <b>moderate pace</b> with score keeping that is needed every 10-20 seconds, because the wrestlers are constantly trying to score points against each other within a given period. There are 3 periods between 1-3 minutes depending on age group.</p>
+
+				<div class="alert alert-success" role="alert">
+					<h4>Benefit from Automation: High</h4>
+				</div>
+				<p>Scorekeepers could put the rosters in for a match or tourtament ahead of time. They could also <b>record more dynamic stats</b> about the moves used to score the points for a takedown, escape, near fall, and etc. </p>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="panel panel-primary myPan">
+			<div class="panel-heading">Additional Insights</div>
+			<div class="panel-body">
+
+				<!-- Fill Out Additional Insights-->
+
+				<!-- This is the subfactor header
+					Change "alert-success" to "alert-danger" if your sport scored low in this subfactor, this will change the box to red. Change "alert-success" to "alert-warning" if your sport score medium in this subfactor, this will make the box to yellow.
+				--> 
+				<div class="alert alert-warning" role="alert">
+					<h4>Existing Competition: Medium</h4>
+				</div>
+				<p>There are existing <b>tourtament managing</b> services and software like <b>Track Wresling</b>, but it is used for bigger and more costly toutaments. There is also an app called <b>Takedown</b> which provides score keeping, comprehensive analysis, and engages fans after the match with detailed reports.</p>
+				<div class="alert alert-success" role="alert">
+					<h4>Benefits from Live Updates: High</h4>
+				</div>
+				<p>Wrestling allows for <b>easy live updating</b>, since each match is one on one and the match is moderately paced. Live updates would allow for fans to see the <b>updating team score</b>, as well as the <b>current wrestler progression</b> throughouht the match.</p>
+
+				<div class="alert alert-warning" role="alert">
+					<h4>Advanced Statistics: Medium</h4>
+				</div>
+				<p>Coaches and wrestlers could potetnially gain from more advanced statistics, especially in regards to which moves are the most effecive. With access to their <b>opponents statistics</b> wrestlers could <b>better prepare for mathces</b> knowing how the match will most likely progress and how their opponent will react.</p>
 			  </div>
 		</div>
 	</div>
 </div>
 </div>
 </div>
-</div>
+</body></html>
