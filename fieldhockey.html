@@ -74,7 +74,23 @@ title: Field Hockey
 						<p> Field hockey has minimal participants at both the high school level and at the youth level as a whole. <b>High school participants totaled 62,171 in 2014</b> and experienced a <b>5 year growth rate of -2.81%</b>. Core population was 747,000 in 2013, the lowest number for any of the sports surveyed, though the core population's <b>growth rate was 13.4%</b>, the highest of any sport.
 						</p>
 
-
+						 <div id='football'></div>
+				     <script type="text/javascript" src="https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown"></script>
+				      <script>
+				        var placeholderDiv = document.getElementById("football");
+				        var url = "https://public.tableau.com/views/4SportBreakDown/SportsAgeBreakdown";
+				        var options = {
+				           hideTabs: true,
+				           width: placeholderDiv.offsetWidth,
+				           height: "600px",
+				           onFirstInteractive: function() {
+				             sheet = viz.getWorkbook().getActiveSheet();
+							worksheetArray = sheet.getWorksheets(); 
+							worksheetArray[0].selectMarksAsync("Sport", "Field Hockey", 'ADD'); 
+				           }
+				        };
+				        var viz = new tableau.Viz(placeholderDiv, url, options);
+				      </script>
 
 					</div>
 				</div>
